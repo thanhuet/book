@@ -75,7 +75,11 @@
 			// open add new author
 			$(document).on('click','.add_new_author',function(){
 				$('.form_edit_author_e').show();
-				// debugger;
+				$('.name_author_edit_e').val('');
+				$('.email_author_edit_e').val('');
+				$('.phone_author_edit_e').val('');
+				$('.birthday_author_edit_e').val('');
+				$('.address_author_edit_e').val('');
 				return false;
 			});
 			// add new author

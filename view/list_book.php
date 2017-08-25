@@ -81,7 +81,6 @@
 						$('.test').html(result);
 					}
 				});
-				// debugger;
 			}
 
 			// add book
@@ -130,7 +129,10 @@
 			});
 			$(document).on('click','.add_new_book',function(){
 				$('.form_book').show();
-				// debugger;
+				$('.name_book').val('');
+				$('.cate_book').val('');
+				$('.author_book').val('');
+				$('.pub_year_book').val('');
 				return false;
 			});
 			// DELETE BOOK

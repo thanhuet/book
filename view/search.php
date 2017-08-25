@@ -14,6 +14,7 @@ $('.search_book').keyup(function(){
 		dataType: 'text',
 		success: function(result){
 			$('.search').html(result);
+			$('.search').show();
 			$('.test').hide();
 			$('.author').hide();
 		}				

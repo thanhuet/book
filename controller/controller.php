@@ -2,9 +2,10 @@
 	define( 'APP', dirname(dirname( __FILE__ )));
 	include APP."/model/book.php";
 	include APP."/model/list_author.php";
-	$conn = mysqli_connect('localhost','root','','book') or die("khong");
+	$conn = mysqli_connect('localhost','root','','book');
 	mysqli_query($conn,"SET NAMES 'UTF8'");
 	require 'controller_author.php';
+	require 'controller_categories_book.php';
 	class model
 	{
 		public $t;
